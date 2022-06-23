@@ -2,7 +2,7 @@ body{
     width: 100vw;
     height: 100vh;
     padding: 0px;
-    margin-top: 0px;
+    margin: 0px;
     display: flex;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -65,12 +65,17 @@ body div{
 @media all and (max-width: 800px) {
     body{
         flex-direction: column;
+        height: fit-content;
+        scroll-snap-type: y mandatory;
     }
     body div{
         width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
     #left{
-        background-image: url(picture-landscape.jpg);
+        background-image: url(picture-portrait.jpg);
         background-size: cover;
     }
 }
