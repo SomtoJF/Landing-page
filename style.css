@@ -1,3 +1,6 @@
+html{
+    font-size: 16px;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -13,6 +16,30 @@ body div{
 #left{
     background-image: url(picture-portrait.jpg);
     background-size: cover;
+}
+#introtext{
+    position: absolute;
+    color: white;
+    top: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    line-height: 2rem;
+    height: 100px;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+#cursor{
+    display: inline-block;
+    width: 2px;
+    height: 45%;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+    
 }
 #right{
     display: flex;
