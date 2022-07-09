@@ -39,8 +39,9 @@ body div{
     100% {opacity: 0;}
 }
 #cursor{
-    position: absolute;
-    top: 85px;
+    position: relative;
+    top: 10%;
+    right: 2%;
     display: inline-block;
     width: 2px;
     height: 45%;
